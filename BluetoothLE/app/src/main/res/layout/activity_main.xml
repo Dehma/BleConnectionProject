@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/container_DispositiviAssociati"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10">
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A53030"
+        android:foregroundTint="@color/colorAccent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <FrameLayout
+        android:id="@+id/container_NuoviDispositivi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="15"
+        android:text="Inizia scansione"
+        android:onClick="onClickStart"/>
+
+</LinearLayout>
